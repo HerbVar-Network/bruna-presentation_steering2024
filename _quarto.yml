@@ -1,5 +1,4 @@
 project:
-  title: "eb_2024_pi_mtg_tutorial"
-
-
-
+  title: "EB_slides"
+  type: website
+  output-dir: 'EB_slides'

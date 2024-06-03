@@ -1,0 +1,301 @@
+---
+title: Reproducible Workflows for HerbVar Projects
+author: Emilio M. Bruna
+date: 3 June 2024
+date-format: "D MMM YYYY"
+format: 
+   revealjs:
+      theme: [night, custom.scss]
+      slide-number: true
+      preview-links: auto
+      show-slide-number: print
+      smaller: true 
+    # self-contained: false
+    # reveal-js-url: 
+# editor: source
+# output-dir: "./static/uploads"
+output: revealjs_presentation
+
+include-in-header:
+      text: |
+        <style>
+        .right {
+          text-align: right;
+        }
+        </style>
+        
+        <style>
+        .left {
+          text-align: left;
+        }
+        </style>
+        
+        <style>
+        .center {
+          text-align: center;
+        }
+        </style>
+---
+
+###  Reproducible Workflows for HerbVar {.center}
+
+1. Motivation
+2. Git/Github for HerbVar Projects
+    a. Correcting & organizing data _for_ HerbVar  (e.g., prior to uploading)
+    b. Analysis of HerbVar data for publications (and manuscript preparation ) 
+3. HerbVar Manual (& how to edit it)
+4. Next Steps
+
+
+---
+
+### But First... {.center}
+
+#### [Herbvar](https://github.com/HerbVar-Network) is now a Github Organization (technically a [_"Team"_](https://docs.github.com/en/get-started/learning-about-github/githubs-plans#github-team)) {.center}
+
+<center><img src="/images/img1.png"  height="90%" width="90%"></center> 
+
+---
+### Why consolidate efforts in Github? {.center}
+
+- can grant users different levels of access and permissions
+
+- allows _private_ repositories 
+
+- Project Progress [Boards](https://github.com/orgs/HerbVar-Network/projects) where you can assign duties, automate progress updates.
+
+- can have [Discussions](https://github.com/orgs/HerbVar-Network/discussions) (Slack-like features like discussions, polls, etc.) 
+
+- **_having all projects in a central location facilitates management, collaboration, & code sharing._**
+
+##
+### Templates {.center}
+
+
+<center><img src="/images/img2.png"  height="80%" width="80%"></center>
+
+
+##
+### Benefits of Using Templates {.center}
+
+::: {.incremental}
+
+- Speeds up project startup  
+- Simplifies data access 
+- Standardizing = smoother collaboration, code review, & code sharing
+- Easier post-acceptance archivin of code and data
+- Pulling in data from a repo with code^[instead of sharing or emailing files] ensures users always have latest version (or at least know what version they're using).
+- Facilitates correction of errors^[via pull requests or posting issues on relevant repo].
+- Work remains accessible after someone moves on^[same philosophy as lab notebooks in bench labs]
+:::
+
+##
+### The biggest obstacles:  {.center}
+#### Habit formation & enforcement {.center} 
+
+<center><img src="/images/img9.png"  height="50%" width="50%"></center>
+
+
+
+##
+### Template 1: {.center}
+#### Cleaning & Organizing Data _for_ HerbVar {.center}
+
+<center> [https://github.com/HerbVar-Network/new_dataset_template](https://github.com/HerbVar-Network/new_dataset_template) <center>
+
+<center><img src="/images/img3.png"  height="50%" width="50%"></center> 
+
+## 
+### Template 2: {.center}
+#### Analyzing HerbVar Data for a Paper _(and the paper too, if you want)_ {.center}
+
+<center> [https://github.com/HerbVar-Network/analysis_and_paper_template](https://github.com/HerbVar-Network/analysis_and_paper_template) <center>
+
+<center><img src="/images/img10.png"  height="60%" width="60%"></center> 
+
+
+##
+### Template 2, cont. {.center}
+
+
+<center><img src="/images/img7.png"  height="100%" width="100%"></center> 
+
+## 
+### Template 2, cont. {.center}
+<center><img src="/images/img8.png"  height="100%" width="100%"></center> 
+
+
+##
+### Set up a new repo from template  {.left}
+
+#### Step 1: {.left}
+
+<center><img src="/images/img4.png"  height="50%" width="50%"></center> 
+
+##
+### Set up a new repo from template {.left}
+#### Step 2: {.left}
+
+<center><img src="/images/img5.png"  height="50%" width="50%"></center> 
+
+##
+### Set up a new repo from template {.left}
+#### Step 3: {.left}
+<center><img src="/images/img6.png"  height="50%" width="50%"></center> 
+
+
+
+
+##
+### Next Steps 
+
+1. Onboarding of new collaborators
+2. Automated data validation with `pointblank` and Github actions
+3. Porting the correction & management of HerbVar datasets to Github
+4. Continued revisions to the Manual
+
+##### **_(help wanted / welcome)_** {.right}
+
+# Bonus Material 
+
+## 
+### How to move a repo from your Github to HerbVar's 
+
+1. Repo Settings -> Danger Zone -> "Transfer ownership"
+
+2. Click `Transfer`, select `HerbVar Organiation` as the new owner
+
+3. update the link from your Rstudio Project and the (new) Repo url by entering the following commands in the terminal: 
+
+  - `git remote -v` ^[removes link to old repo]
+  - `git remote add origin https://github.com/HerbVar-Network/REPOSITORY-NAME.git` ^[. Connects to new repo location. Be sure to replace REPOSITORY-NAME with...the name of the repository.]
+
+## 
+### Resources worth considering...
+::: columns
+
+::: {.column width="50%"}
+**For Reproducibility**  
+
+- [`workflower`](https://workflowr.github.io/workflowr/index.html)
+
+- [`renv`](https://rstudio.github.io/renv/articles/renv.html)
+
+- List of [workflow packages](https://github.com/jdblischak/r-project-workflows?tab=readme-ov-file)
+:::
+::: {.column width="50%"}
+
+**For Manuscripts**
+
+- [`papaja`](https://frederikaust.com/papaja_man/)
+
+- [`rticles`](https://pkgs.rstudio.com/rticles/)
+
+**Ideas: content of projects **  
+
+- [`starters`](https://itsalocke.com/starters/)
+
+- [`rrrpkg`](https://github.com/ropensci/rrrpkg)
+
+- [`template`](https://github.com/Pakillo/template?tab=readme-ov-file)
+
+- [`rr-init`](https://github.com/Reproducible-Science-Curriculum/rr-init?tab=readme-ov-file)
+
+:::
+:::
+
+##
+### Useful Reading 
+
+- BES Guide to [Reproducible Code](https://www.britishecologicalsociety.org/wp-content/uploads/2019/06/BES-Guide-Reproducible-Code-2019.pdf?utm_source=web&utm_medium=web&utm_campaign=better_science)
+- BES Guide to [Data Management](https://www.britishecologicalsociety.org/wp-content/uploads/2019/06/BES-Guide-Data-Management-2019.pdf?utm_source=web&utm_medium=web&utm_campaign=better_science)
+- Braga et al. 2023. [Not just for programmers: How GitHubcan accelerate collaborative and reproducible research in ecology and evolution](https://onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.14108). Methods in Ecology and Evolution 14: 1364–1380. 
+- Kim et al. 2022. [Implementing GitHub Actions continuous integration to reduce error rates in ecological data collection](https://onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.13982). Methods in Ecology andEvolution 13: 2572–2585. 
+- Yenni et al. 2019. [Developing a modern data workflow for regularly updated data](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000125). PLOS Biology 17: e3000125.
+
+
+
+<!-- ##  -->
+<!-- #### Contemporary “Research Data Life-Cycle” -->
+
+<!-- <center><img src="/images/img5.png"  height="60%" width="60%"></center> -->
+
+<!-- ##  -->
+<!-- #### ‘Data Management Plans’ become ‘Metadata’ -->
+
+<!-- <center><img src="/images/img6.png"  height="100%" width="100%"></center> -->
+
+
+<!-- ##  -->
+<!-- #### Data Management Plans  -->
+
+
+<!-- ::: columns -->
+
+<!-- ::: {.column width="40%"} -->
+
+<!-- &nbsp;  -->
+
+<!-- - Formal document that lays out your plan for managing the data you will collect (or have collected).   -->
+
+<!-- - Outlines what you will do with your data during and after you complete your research  -->
+
+<!-- - Ensures your data is safe for the present and the future  -->
+
+<!-- &nbsp;  -->
+
+<!-- <h4 style="color:darkblue">*Does this sound familiar?*</h4> -->
+
+<!-- ::: columns -->
+
+<!-- ::: {.column width="40%"} -->
+
+<!-- &nbsp;  -->
+
+<!-- ::: -->
+<!-- ::: {.column width="60%"} -->
+<!-- <img src="/images/img7.png"  height="60%" width="60%"> -->
+<!-- ::: -->
+<!-- ::: -->
+
+
+<!-- ##  -->
+<!-- #### Why do a DMP? -->
+
+<!-- - Save time -->
+<!-- - Less work later -->
+<!-- - Increase research efficiency -->
+<!-- - **_You  may not have a choice._** -->
+
+<!-- <img src="/images/img8.png"  height="60%" width="60%"> -->
+
+<!-- ##  -->
+<!-- #### Components of a DMP -->
+
+<!-- - Information about data & data format -->
+<!-- - Metadata content and format -->
+<!-- - Policies for access, sharing and re-use -->
+<!-- - Long-term storage and data management -->
+<!-- - Roles and responsibilities -->
+<!-- - Budget -->
+
+<!-- <section class="right"> -->
+<!-- <h4 style="color:darkblue">*Again...Does this sound familiar?*</h4> -->
+<!-- </section> -->
+
+<!-- ##  -->
+<!-- #### Today... -->
+
+<!-- ::: {.incremental} -->
+
+<!-- ::: columns -->
+<!-- ::: {.column width="50%"} -->
+<!-- <img src="/images/img9.png"  height="100%" width="100%"> -->
+<!-- ::: -->
+<!-- ::: {.column width="50%"} -->
+<!-- <img src="/images/img10.png"  height="100%" width="100%"> -->
+<!-- ::: -->
+<!-- ::: -->
+
+<!-- ::: -->
+
