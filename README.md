@@ -1,2 +1,3 @@
-# bruna-presentation_steering2024
-E Bruna presentation on github templates for the 2024 Steering Committee Meeting
+# EM Bruna Presentation, 2024 Steering Committee Meeting
+
+Slides and handout for EM Bruna presentation on github templates at the 2024 Steering Committee Meeting.
