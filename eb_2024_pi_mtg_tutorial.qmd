@@ -1,0 +1,81 @@
+---
+# title: "EMB Presentation"
+# subtitle: "June 2024 HerbVar Meeting"
+bibliography: HerbVar.bib
+format: 
+  pdf:
+    geometry: 
+      - top=1in
+      - left=1in
+csl: biotropica.csl
+---
+
+```{r}
+#| label: load-packages
+#| include: false
+
+library(tidyverse)
+library(clipr)
+```
+
+# EMB Presentation - June 2024 HerbVar Meeting
+
+---
+nocite: |
+    @kimImplementingGitHubActions2022, @yenniDevelopingModernData2019, @bragaNotJustProgrammers2023
+---
+
+## Materials for Review
+
+Hello all, I wish i could be joining you but my kid is graduating from high school this weekend, so insted I get to zoom in from sunny (and very muggy) Florida. 
+
+Below are some suggested items to review before we discuss the proposed workflow and tools for HerbVar (1) data management and (2) data analysis for/and manuscripts. If you have any questions, please feel free to reach out vial slack or email.  
+
+### Articles  
+
+::: {#refs}
+:::
+
+## An example `Data Cleanup & Management Repo` with Automated Data Validation
+
+1. [`Heliconia Surveys Data Management Repo`](https://github.com/BrunaLab/HeliconiaSurveys)
+2. Automated data validation using the `pointblabnk` package: [Results and visualization](https://brunalab.github.io/HeliconiaSurveys/survey_validation/survey_validation.html)
+
+## An example `Analysis and Manuscript Repo` using data pulled in programatically
+
+1. [The Analysis & Manuscript repository](https://github.com/BrunaLab/Bruna_etal_HeliconiaDataPaper) for a Data Paper in _Ecology_.
+
+## HerbVar is now a GitHub 'Organization'
+
+HerbVar's Github Organization can be found at [https://github.com/HerbVar-Network](https://github.com/HerbVar-Network). This site includes: 
+
+1. A link to the [HerbVar Zotero library](https://www.zotero.org/groups/5539815/herbvar) (for keeping a record of papers and presentations). You can request to join the group by emailing embruna@ufl.edu or via the Zotero site.
+
+2. Rstudio Project Templates for data cleanup and data analysis (more on that in a bit). 
+
+3. v2.0 of the Herbvar Manual and Protocols. It's still being edited, but you can see the latest version here: 
+
+    - nice looking [HTML version](https://herbvar-network.github.io/herbvar_manual/)
+    - the book's [repository](https://github.com/HerbVar-Network/herbvar_manual)
+    - a [pdf version](https://github.com/HerbVar-Network/herbvar_manual/blob/c16cb0533026ed18a834b3b5b25e52aa76436ff3/_book/HerbVar-Project-Manual---Field-Protocols.pdf) 
+    - the [repository](https://github.com/HerbVar-Network/herbvar_manual) for the manual
+
+    ***If you would help edit the manual or learn how to contribute new entries***, you can begin by:  
+  
+   - [Installing Quarto](https://quarto.org/docs/get-started/) 
+   - reviewing the [Introduction & Tutorial](https://quarto.org/docs/get-started/hello/rstudio.html), and 
+   - Creating a new Rstudio Project on your computer with [this url](https://github.com/HerbVar-Network/herbvar_manual.git) 
+
+
+## Presentation 
+
+And finally, here is a (brief) outline of my (brief) presentation and tutorial:
+
+1. Motivation
+2. The HerbVar Organization on Github 
+3. Git/Github for HerbVar Projects
+    a. Correcting & organizing data for HerbVar (e.g., prior to uploading)
+    b. Analysis of HerbVar data for publications (and manuscript preparation ) 
+4. HerbVar Manual 2.0 (& how to edit it)
+5. Next Steps? Ideas? Suggestions?
+
