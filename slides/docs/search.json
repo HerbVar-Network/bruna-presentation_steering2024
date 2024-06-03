@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "herbvar_slides.html#section",
+    "href": "herbvar_slides.html#section",
+    "title": "Reproducible Workflows for HerbVar Projects",
+    "section": "",
+    "text": "Templates"
+  },
+  {
+    "objectID": "herbvar_slides.html#section-1",
+    "href": "herbvar_slides.html#section-1",
+    "title": "Reproducible Workflows for HerbVar Projects",
+    "section": "",
+    "text": "Benefits of Using Templates\n\n\nSpeeds up project startup\n\nSimplifies data access\nStandardizing = smoother collaboration, code review, & code sharing\nEasier post-acceptance archivin of code and data\nPulling in data from a repo with code1 ensures users always have latest version (or at least know what version they’re using).\nFacilitates correction of errors2.\nWork remains accessible after someone moves on3\n\n\ninstead of sharing or emailing filesvia pull requests or posting issues on relevant reposame philosophy as lab notebooks in bench labs"
+  },
+  {
+    "objectID": "herbvar_slides.html#section-2",
+    "href": "herbvar_slides.html#section-2",
+    "title": "Reproducible Workflows for HerbVar Projects",
+    "section": "",
+    "text": "The biggest obstacles:\nHabit formation & enforcement"
+  },
+  {
+    "objectID": "herbvar_slides.html#section-3",
+    "href": "herbvar_slides.html#section-3",
+    "title": "Reproducible Workflows for HerbVar Projects",
+    "section": "",
+    "text": "Template 1:\nCleaning & Organizing Data for HerbVar\n\nhttps://github.com/HerbVar-Network/new_dataset_template"
+  },
+  {
+    "objectID": "herbvar_slides.html#section-4",
+    "href": "herbvar_slides.html#section-4",
+    "title": "Reproducible Workflows for HerbVar Projects",
+    "section": "",
+    "text": "Template 2:\nAnalyzing HerbVar Data for a Paper (and the paper too, if you want)\n\nhttps://github.com/HerbVar-Network/analysis_and_paper_template"
+  },
+  {
+    "objectID": "herbvar_slides.html#section-5",
+    "href": "herbvar_slides.html#section-5",
+    "title": "Reproducible Workflows for HerbVar Projects",
+    "section": "",
+    "text": "Template 2, cont."
+  },
+  {
+    "objectID": "herbvar_slides.html#section-6",
+    "href": "herbvar_slides.html#section-6",
+    "title": "Reproducible Workflows for HerbVar Projects",
+    "section": "",
+    "text": "Template 2, cont."
+  },
+  {
+    "objectID": "herbvar_slides.html#section-7",
+    "href": "herbvar_slides.html#section-7",
+    "title": "Reproducible Workflows for HerbVar Projects",
+    "section": "",
+    "text": "Set up a new repo from template\nStep 1:"
+  },
+  {
+    "objectID": "herbvar_slides.html#section-8",
+    "href": "herbvar_slides.html#section-8",
+    "title": "Reproducible Workflows for HerbVar Projects",
+    "section": "",
+    "text": "Set up a new repo from template\nStep 2:"
+  },
+  {
+    "objectID": "herbvar_slides.html#section-9",
+    "href": "herbvar_slides.html#section-9",
+    "title": "Reproducible Workflows for HerbVar Projects",
+    "section": "",
+    "text": "Set up a new repo from template\nStep 3:"
+  },
+  {
+    "objectID": "herbvar_slides.html#section-10",
+    "href": "herbvar_slides.html#section-10",
+    "title": "Reproducible Workflows for HerbVar Projects",
+    "section": "",
+    "text": "Next Steps\n\nOnboarding of new collaborators\nAutomated data validation with pointblank and Github actions\nPorting the correction & management of HerbVar datasets to Github\nContinued revisions to the Manual\n\n(help wanted / welcome)"
+  },
+  {
+    "objectID": "herbvar_slides.html#section-11",
+    "href": "herbvar_slides.html#section-11",
+    "title": "Reproducible Workflows for HerbVar Projects",
+    "section": "",
+    "text": "How to move a repo from your Github to HerbVar’s\n\nRepo Settings -&gt; Danger Zone -&gt; “Transfer ownership”\nClick Transfer, select HerbVar Organiation as the new owner\nupdate the link from your Rstudio Project and the (new) Repo url by entering the following commands in the terminal:\n\n\ngit remote -v 1\ngit remote add origin https://github.com/HerbVar-Network/REPOSITORY-NAME.git 2\n\nremoves link to old repo. Connects to new repo location. Be sure to replace REPOSITORY-NAME with…the name of the repository."
+  },
+  {
+    "objectID": "herbvar_slides.html#section-12",
+    "href": "herbvar_slides.html#section-12",
+    "title": "Reproducible Workflows for HerbVar Projects",
+    "section": "",
+    "text": "Resources worth considering…\n\n\nFor Reproducibility\n\nworkflower\nrenv\nList of workflow packages\n\n\nFor Manuscripts\n\npapaja\nrticles\n\nIdeas: content of projects \n\nstarters\nrrrpkg\ntemplate\nrr-init"
+  },
+  {
+    "objectID": "herbvar_slides.html#section-13",
+    "href": "herbvar_slides.html#section-13",
+    "title": "Reproducible Workflows for HerbVar Projects",
+    "section": "",
+    "text": "Useful Reading\n\nBES Guide to Reproducible Code\nBES Guide to Data Management\nBraga et al. 2023. Not just for programmers: How GitHubcan accelerate collaborative and reproducible research in ecology and evolution. Methods in Ecology and Evolution 14: 1364–1380.\nKim et al. 2022. Implementing GitHub Actions continuous integration to reduce error rates in ecological data collection. Methods in Ecology andEvolution 13: 2572–2585.\nYenni et al. 2019. Developing a modern data workflow for regularly updated data. PLOS Biology 17: e3000125."
+  }
+]

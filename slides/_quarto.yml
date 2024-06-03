@@ -1,4 +1,4 @@
 project:
   title: "EB_slides"
   type: website
-  output-dir: 'EB_slides'
+  output-dir: docs
