@@ -14,7 +14,8 @@ csl: biotropica.csl
 #| label: load-packages
 #| include: false
 #| 
-
+library(knitr)
+library(rmarkdown)
 library(tidyverse)
 library(clipr)
 ```
