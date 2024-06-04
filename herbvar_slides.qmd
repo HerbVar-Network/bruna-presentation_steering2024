@@ -49,7 +49,7 @@ include-in-header:
 
 ###  Reproducible Workflows for HerbVar {.center}
 
-1. The Motivation
+1. Motivation
 2. Git/Github for HerbVar Projects
     a. Correcting & organizing data _for_ HerbVar  (e.g., prior to uploading)
     b. Analysis of HerbVar data for publications (and manuscript preparation ) 
