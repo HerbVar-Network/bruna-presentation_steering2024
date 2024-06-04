@@ -17,6 +17,8 @@ csl: biotropica.csl
 library(tidyverse)
 library(clipr)
 ```
+<!-- add this? https://www.emilyriederer.com/post/data-valid-lightweight/ -->
+
 
 # EMB Presentation - June 2024 HerbVar Meeting
 
