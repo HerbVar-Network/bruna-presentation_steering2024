@@ -1,5 +1,5 @@
 ---
-title: Reproducible Workflows for HerbVar Projects
+title: Github as a tool for promoting reproducibility and collaboration in the HerbVar Network
 author: Emilio M. Bruna
 date: 3 June 2024
 date-format: "D MMM YYYY"
