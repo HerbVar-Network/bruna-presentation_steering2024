@@ -117,7 +117,7 @@ include-in-header:
 
 ## 
 ### Template 2: {.center}
-#### Analyzing HerbVar Data for a Paper _(and the paper too, if you want)_ {.center}
+#### Analyzing HerbVar Data for a _Paper_ _(and the paper too, if you want)_ {.center}
 
 <center> [https://github.com/HerbVar-Network/analysis_and_paper_template](https://github.com/HerbVar-Network/analysis_and_paper_template) <center>
 
