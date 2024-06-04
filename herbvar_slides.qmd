@@ -40,11 +40,11 @@ include-in-header:
 ```{r}
 #| label: load-packages
 #| include: false
-#| 
-library(knitr)
-library(rmarkdown)
-library(tidyverse)
-library(clipr)
+
+# library(knitr)
+# library(rmarkdown)
+# library(tidyverse)
+# library(clipr)
 ```
 
 ###  Reproducible Workflows for HerbVar {.center}
