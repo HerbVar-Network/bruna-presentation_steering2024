@@ -38,11 +38,6 @@ include-in-header:
         </style>
 ---
 
-```{r}
-
-library(knitr)
-library(rmarkdown)
-```
 ###  Reproducible Workflows for HerbVar {.center}
 
 1. The Motivation
