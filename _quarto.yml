@@ -2,3 +2,5 @@ project:
   title: "EB_slides"
   type: website
   output-dir: docs
+execute:
+  freeze: auto
