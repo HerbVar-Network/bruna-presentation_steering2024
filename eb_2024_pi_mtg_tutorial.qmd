@@ -13,6 +13,7 @@ csl: biotropica.csl
 ```{r}
 #| label: load-packages
 #| include: false
+#| 
 
 library(tidyverse)
 library(clipr)
@@ -81,4 +82,4 @@ And finally, here is a (brief) outline of my (brief) presentation and tutorial:
     b. Analysis of HerbVar data for publications (and manuscript preparation ) 
 4. HerbVar Manual 2.0 (& how to edit it)
 5. Next Steps? Ideas? Suggestions?
-
+ 
